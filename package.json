@@ -1,0 +1,23 @@
+{
+  "name": "uber-landing",
+  "version": "1.0.0",
+  "description": "UBER-LANDING SITE",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "scss-compile": "node-sass -rw web/scss -o web/css",
+    "watch": "npm run scss-compile",
+    "lint-scss": "sass-lint 'app/assets/stylesheets/scss/*.scss' -v -q",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "sass-lint": "^1.12.1",
+    "node-sass": "^4.9.0"
+  }
+}
