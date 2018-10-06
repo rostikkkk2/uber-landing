@@ -4,6 +4,6 @@ jobs:
     working_directory: ~/uber-landing
     docker:
       - image: circleci/php:7.2-node-browsers
-     steps:
-      - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
+    steps:
+    - checkout # check out the code in the project directory
+    - run: echo "hello world" # run the `echo` command
