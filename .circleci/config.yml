@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: circleci/php:7.2-node-browsers
         environment:
-          MYSQL_HOST: http://159.65.205.107:80
+          MYSQL_HOST: http://159.65.205.107
           MYSQL_DB: uber-landing
           MYSQL_USER: root
           MYSQL_ALLOW_EMPTY_PASSWORD: true
@@ -41,7 +41,7 @@ jobs:
       - run:
           name: Create database
           command: |
-            sudo mysql -h http://159.65.205.107:80 -u root -e "CREATE DATABASE IF NOT EXISTS uber-landing;"
+            sudo mysql -h http://159.65.205.107 -u root -e "CREATE DATABASE IF NOT EXISTS uber-landing;"
       - run:
           name: Migrations run
           command: |
