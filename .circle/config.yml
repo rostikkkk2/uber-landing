@@ -1,12 +1,12 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/techus.com
+    working_directory: ~/uber-landing
     docker:
       - image: circleci/php:7.2-node-browsers
         environment:
           MYSQL_HOST: http://159.65.205.107:80
-          MYSQL_DB: techus_test
+          MYSQL_DB: uber-landing
           MYSQL_USER: root
           MYSQL_ALLOW_EMPTY_PASSWORD: true
           MYSQL_PASSWORD:
