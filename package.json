@@ -9,7 +9,7 @@
   "scripts": {
     "scss-compile": "node-sass -rw web/scss -o web/css",
     "watch": "npm run scss-compile",
-    "lint-scss": "sass-lint 'app/assets/stylesheets/scss/*.scss' -v -q",
+    "lint-scss": "sass-lint 'app/assets/stylesheets/scss/*.scss' -v -q"
   },
   "author": "",
   "license": "ISC",
