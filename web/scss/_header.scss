@@ -1,0 +1,17 @@
+@import 'variables';
+
+header {
+  background-blend-mode: overlay;
+  background-image: url('../images/header-img.png'), linear-gradient(45deg, #211e1e, #727272);
+  background-size: cover;
+  margin-bottom: 50px;
+  background-position: initial;
+  min-height: 33pc;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 21px;
+    margin-left: 20px;
+    color: $white;
+  }
+}
