@@ -2,7 +2,7 @@
   use app\assets\AppAsset;
   use yii\helpers\Html;
   use yii\widgets\ActiveForm;
-  use app\controllers\WorkerController;
+  use app\models\NewWorker;
   AppAsset::register($this);
 ?>
 <?php $this -> beginPage(); ?>
@@ -16,8 +16,24 @@
     <?php $this -> head(); ?>
   </head>
   <body>
-    <?php $this -> beginBody(); ?>
     <header class="c-white">
+      <?php $this -> beginBody(); ?>
+      <?php if (Yii::$app -> session -> hasFlash('success')) :?>
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <?= Yii::$app -> session -> getFlash('success'); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (Yii::$app -> session -> hasFlash('error')) :?>
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <?= Yii::$app -> session -> getFlash('error'); ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <?php endif; ?>
       <nav>
         <div class="container">
           <div class="row">
@@ -66,14 +82,18 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 text-center">
+            <?php $new_worker = new NewWorker(); ?>
             <?php $form_new_worker = ActiveForm::begin([
-              'action' => '/worker/create',
+              'action' => ['landing/create'],
               'method' => 'post',
               'options' => ['class' => 'form-new-worker'],
             ]); ?>
-            <!-- <? $form_new_worker -> field($model, 'name') -> textInput(['class' => 'input-name', 'placeholder' => 'Имя']) -> label(false); ?> -->
-            <button type="submit" class="">Отправить</button>
+            <?= $form_new_worker -> field($new_worker, 'name') -> textInput(['class' => 'input-name', 'placeholder' => 'Имя']) -> label(false); ?>
+            <?= $form_new_worker -> field($new_worker, 'phone_number') -> textInput(['class' => 'input-name', 'placeholder' => 'Телефон']) -> label(false); ?>
+            <?= $form_new_worker -> field($new_worker, 'name_car') -> textInput(['class' => 'input-name', 'placeholder' => 'Марка машин']) -> label(false); ?>
+            <?= $form_new_worker -> field($new_worker, 'year_born_car') -> textInput(['class' => 'input-name', 'placeholder' => 'Год выпуска']) -> label(false); ?>
+            <?= Html::submitButton('Отправить', ['class' => '']); ?>
             <?php $form_new_worker = ActiveForm::end();?>
           </div>
         </div>
@@ -81,22 +101,6 @@
     </header>
     <main>
       <div class="content">
-        <?php if (Yii::$app -> session -> hasFlash('success')) :?>
-          <div class="alert alert-success alert-dismissible mt-20" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <?= Yii::$app -> session -> getFlash('success'); ?>
-          </div>
-        <?php endif; ?>
-        <?php if (Yii::$app -> session -> hasFlash('error')) :?>
-        <div class="alert alert-danger alert-dismissible mt-20" role="alert">
-          <?= Yii::$app -> session -> getFlash('error'); ?>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <?php endif; ?>
         <?= $content ?>
       </div>
     </main>
