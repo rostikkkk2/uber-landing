@@ -1,11 +1,10 @@
 <?php
 
 namespace app\models;
-use app\controllers\WorkerController;
+
 use Yii;
 
 class NewWorker extends \yii\db\ActiveRecord {
-
 
   public static function tableName() {
     return 'new_worker';
@@ -13,8 +12,8 @@ class NewWorker extends \yii\db\ActiveRecord {
 
   public function rules() {
     return [
-        [['name', 'name_car', 'year_born_car'], 'required'],
-        [['year_born_car'], 'safe'],
+        [['name', 'phone_number', 'name_car', 'year_born_car'], 'required'],
+        [['phone_number', 'year_born_car'], 'integer'],
         [['name', 'name_car'], 'string', 'max' => 50],
     ];
   }
@@ -23,6 +22,7 @@ class NewWorker extends \yii\db\ActiveRecord {
     return [
         'id' => 'ID',
         'name' => 'Name',
+        'phone_number' => 'Phone Number',
         'name_car' => 'Name Car',
         'year_born_car' => 'Year Born Car',
     ];
