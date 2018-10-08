@@ -13,7 +13,7 @@ class WorkerController extends Controller {
       // $model -> name =
       // Yii::$app -> session -> setFlash('success', 'ваша заявка принята');
       // return $this -> goHome();
-    }
+    // }
   }
 }
 
