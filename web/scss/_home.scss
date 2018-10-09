@@ -66,3 +66,17 @@ img {
     color: #000;
   }
 }
+.requirement-wrapper {
+  .requirement {
+    text-align: center;
+    padding: 15px;
+    p {
+      width: 80%;
+      margin: 20px auto;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

@@ -43,12 +43,11 @@
             </div>
             <div class="col-md-4">
               <ul class="mt-25">
-                <li>Преимущества</li>
-                <li>Требования</li>
+                <li><a href="#guarantees">Преимущества</a></li>
+                <li><a href="#requiremets">Требования</a></li>
                 <li>Вопросы</li>
                 <li>О нас</li>
                 <li>Контакты</li>
-
               </ul>
             </div>
             <div class="col-md-1"></div>
