@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row mt-50">
-    <h2 class="text-center mb-50">Требования к водителю</h2>
+    <h2 class="text-center mb-50 headline">Требования к водителю</h2>
     <a name="requiremets"></a>
     <div class="col-md-12">
       <div class="row requirement-wrapper">

@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12 wrapper-guarantees">
   <a name="guarantees"></a>
-    <h2 class="text-center mb-50 mt-80">Преимущества</h2>
+    <h2 class="text-center mb-25 mt-25 headline">Преимущества</h2>
     <div class="row">
       <div class="col-md-4 col-sm-4 mt-25">
         <p class="text-center">

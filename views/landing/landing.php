@@ -6,9 +6,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <?php require(__DIR__ . '/guarantees.php'); ?>
-      <?php require(__DIR__ . '/requirement.php'); ?>
-      <?php require(__DIR__ . '/faq.php'); ?>
+      <?= $this->render('guarantees.php') ?>
+      <?= $this->render('requirement.php') ?>
+      <?= $this->render('faq.php') ?>
     </div>
   </div>
 </div>
