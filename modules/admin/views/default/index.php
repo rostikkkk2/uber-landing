@@ -1,0 +1,1 @@
+<p>hello i'm admin page</p>
