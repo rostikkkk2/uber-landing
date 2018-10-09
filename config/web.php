@@ -7,7 +7,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    // 'language' => 'en-US',
+    'language' => 'ru',
     'layout' => 'basic',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -15,6 +15,7 @@ $config = [
     ],
     'components' => [
         'request' => [
+          'baseUrl' => '',
           'cookieValidationKey' => 'p9fGB69gdLp32d8gzE_nxeYa5qzmhF6g',
         ],
         'cache' => [
@@ -45,7 +46,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => 'landing/index'
+              '' => '/landing/index',
+              '<controller:\w+>s>' => '<controller>/index',
+              'POST <controller>' => '<controller>/create'
             ],
         ],
     ],
