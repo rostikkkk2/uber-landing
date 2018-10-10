@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .titile-service {
   border: 2px solid #ffc24d;
   font-size: 14px;
@@ -31,6 +34,7 @@ img {
 }
 
 .FAQ-wrapper {
+    text-align: center;
   .headline {
     color: #ffc24d;
     font-size: 40px;
