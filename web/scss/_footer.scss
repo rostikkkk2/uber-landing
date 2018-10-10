@@ -1,6 +1,6 @@
 @import 'variables';
 footer {
-  background-color: #38414c;
+  background-color: $gray;
   text-align: center;
   li {
     color: $white;
@@ -9,17 +9,19 @@ footer {
     list-style-type: none;
     margin-left: 35px;
   }
+
   a {
     color: $white;
     &:hover {
-      color: #ffc24d;
+      color: $yellow;
       text-decoration: none;
       transition: all 1s cubic-bezier(0.53, 0.1, 0, 0.91);
     }
   }
+
   img {
-    width: auto;
     height: auto;
     margin-left: 30px;
+    width: auto;
   }
 }
