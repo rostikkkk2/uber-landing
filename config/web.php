@@ -25,8 +25,9 @@ $config = [
       'class' => 'yii\caching\FileCache',
     ],
     'user' => [
-      'identityClass' => 'app\models\User',
+      'identityClass' => 'app\modules\admin\models\User',
       'enableAutoLogin' => true,
+      'loginUrl' => ['admin'],
     ],
     'errorHandler' => [
       'errorAction' => 'error/error',
@@ -50,6 +51,7 @@ $config = [
       'showScriptName' => false,
       'rules' => [
         '' => '/landing/index',
+        'POST admin/<controller>/delete/<id:\d+>' => '/admin/list/delete',
       ],
     ],
   ],

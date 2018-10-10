@@ -16,7 +16,7 @@
     <?php $this -> head(); ?>
   </head>
   <body>
-    <header class="c-white">
+    <header class="c-white header">
       <?php $this -> beginBody(); ?>
       <?php if (Yii::$app -> session -> hasFlash('success')) :?>
         <div class="alert alert-success alert-dismissible" role="alert">
