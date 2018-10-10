@@ -106,8 +106,35 @@
         <?= $content ?>
       </div>
     </main>
-    <footer>
-
+    <footer class="mt-25">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <p class="fs-18 mt-25 c-white">uberUKRAINE_Cab</p>
+          </div>
+          <div class="col-md-7">
+            <ul class="mt-25">
+              <li><a href="#guarantees">Преимущества</a></li>
+              <li><a href="#requiremets">Требования</a></li>
+              <li>Вопросы</li>
+              <li>О нас</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="mt-24 fs-22">
+              <i class="c-white glyphicon glyphicon-earphone fs-18"></i>
+              <a href="tel:+380983432725">+38(098)<b>3432725</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-30 mt-20">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ubercab.driver&hl=ru"><img src="images/play.png" alt=""></a>
+            <a target="_blank" href="https://itunes.apple.com/ru/app/uber-driver-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9/id1131342792?mt=8"><img src="images/appstore.png" alt=""></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <?php $this -> endBody(); ?>
   </body>
