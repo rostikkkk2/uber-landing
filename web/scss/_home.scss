@@ -29,18 +29,16 @@ img {
   }
 }
 
-.FAQ-wrapper {
-    text-align: center;
-  .headline {
-    color: #ffc24d;
-    font-size: 40px;
-    font-weight: 800;
-  }
+.headline {
+  color: #ffc24d;
+  font-size: 40px;
+  font-weight: 800;
+}
 
+.FAQ-wrapper {
   .FAQ {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
-    height: 200px;
     margin-top: 20px;
     padding: 15px;
     &:hover {
