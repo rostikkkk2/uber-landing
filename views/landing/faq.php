@@ -1,7 +1,7 @@
 <div class="row">
-  <div class="col-md-12 mt-25 mb-25 FAQ-wrapper">
-    <h2 class="text-center headline">Популярные вопросы</h2>
-    <div class="row mt-25">
+  <div class="col-md-12 mt-25 mb-50 FAQ-wrapper">
+    <h2 class="text-center mb-25 headline">Популярные вопросы</h2>
+    <div class="row">
       <div class="col-md-4">
         <div class="FAQ">
           <p class="title-FAQ">КТО МОЖЕТ СТАТЬ ВОДИТЕЛЕМ УБЕР</p>
