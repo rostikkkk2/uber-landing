@@ -3,6 +3,7 @@
   use yii\helpers\Html;
   use yii\widgets\ActiveForm;
   use app\models\NewWorker;
+  use app\models\Partner;
   AppAsset::register($this);
 ?>
 <?php $this -> beginPage(); ?>
@@ -16,7 +17,7 @@
     <?php $this -> head(); ?>
   </head>
   <body>
-    <header class="c-white">
+    <header class="basic-header c-white">
       <?php $this -> beginBody(); ?>
       <?php if (Yii::$app -> session -> hasFlash('success')) :?>
         <div class="alert alert-success alert-dismissible" role="alert">
@@ -37,24 +38,37 @@
       <nav>
         <div class="container">
           <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-2">
+            <div class="col-sm-3 col-xs-3 col-md-2 ">
               <h1 class="">uber</h1>
             </div>
-            <div class="col-md-4">
-              <ul class="mt-25">
+            <div class="col-md-8 hidden-xs hidden-sm">
+              <ul class="mt-25 nav-menu-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#requiremets">Требования</a></li>
-                <li>Вопросы</li>
-                <li>О нас</li>
-                <li>Контакты</li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вопросы</a></li>
               </ul>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-              <div class="mt-24 fs-22">
+            <div class="col-xs-9 col-sm-4 text-center hidden-md hidden-lg">
+              <div class="dropdown show">
+                <button class="btn back-none btn-secondary mt-15 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="glyphicon glyphicon-align-justify fs-25"></i>
+                </button>
+                <div class="dropdown-menu nav-btns-menu-phone" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#guarantees">Преимущества</a><br>
+                  <a class="dropdown-item" href="#requiremets">Требования</a></br>
+                  <a class="dropdown-item" href="#">О нас</a></br>
+                  <a class="dropdown-item" href="#">Контакты</a></br>
+                  <a class="dropdown-item" href="#">Вопросы</a></br>
+                  <a href="tel:+380983432725"><b>0983432725</b></a>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-xs col-sm-5 col-md-2">
+              <div class="mt-27 fs-19">
                 <i class="glyphicon glyphicon-earphone"></i>
-                (098)<b>3432725</b>
+              <a href="tel:+380983432725"><b>0983432725</b></a>
               </div>
             </div>
           </div>
@@ -62,13 +76,13 @@
       </nav>
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center mt-50">
+          <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-40">
             <b class="fs-36">Как начать работать с Uber</b>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8 mt-15">
+          <div class="col-xs-2 col-sm-2 col-md-2"></div>
+          <div class="col-xs-8 col-sm-8 col-md-8 mt-15">
             <span class="fs-20">
               Uber - доверенный партнер компании Uber в Украине.
               Для того, чтобы начать работать, отправляйте заявку через форму,
@@ -76,33 +90,27 @@
               для онлайн активации
             </span>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-xs-12 col-sm-12 col-md-2"></div>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center mt-34">
+          <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-43 mb-44">
             <b class="fs-23">Оставьте заявку и мы вам перезвоним:</b>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
-            <?php $new_worker = new NewWorker(); ?>
-            <?php $form_new_worker = ActiveForm::begin([
-              'action' => ['landing/create'],
-              'method' => 'post',
-              'options' => ['class' => 'form-new-worker'],
-            ]); ?>
-            <?= $form_new_worker -> field($new_worker, 'name') -> textInput(['class' => 'input-name', 'placeholder' => 'Имя']) -> label(false); ?>
-            <?= $form_new_worker -> field($new_worker, 'phone_number') -> textInput(['class' => 'input-name', 'placeholder' => 'Телефон']) -> label(false); ?>
-            <?= $form_new_worker -> field($new_worker, 'name_car') -> textInput(['class' => 'input-name', 'placeholder' => 'Марка машин']) -> label(false); ?>
-            <?= $form_new_worker -> field($new_worker, 'year_born_car') -> textInput(['class' => 'input-name', 'placeholder' => 'Год выпуска']) -> label(false); ?>
-            <?= Html::submitButton('Отправить', ['class' => '']); ?>
-            <?php $form_new_worker = ActiveForm::end();?>
+          <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+            <button type="button" id="btn_new_worker" class="btn-new-worker-change-partner mb-30">Стать водителем</button>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+            <button type="button" id="btn_partner" class="btn-new-worker-change-partner change-partner mb-30">Сменить партнера</button>
           </div>
         </div>
       </div>
     </header>
     <main>
       <div class="content">
+        <?= $this->render ('./modal-forms/modalFormWorker.php'); ?>
+        <?= $this->render ('./modal-forms/modalFormPartner.php'); ?>
         <?= $content ?>
       </div>
     </main>
@@ -116,15 +124,15 @@
             <ul class="mt-25">
               <li><a href="#guarantees">Преимущества</a></li>
               <li><a href="#requiremets">Требования</a></li>
-              <li>Вопросы</li>
               <li>О нас</li>
               <li>Контакты</li>
+              <li>Вопросы</li>
             </ul>
           </div>
           <div class="col-md-3 number-footer">
             <div class="mt-22 fs-22">
               <i class="c-white glyphicon glyphicon-earphone fs-18"></i>
-              <a href="tel:+380983432725">(098)<b>3432725</b></a>
+              <a href="tel:+380983432725"><b>0983432725</b></a>
             </div>
           </div>
         </div>

@@ -6,9 +6,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <?= $this->render('guarantees.php') ?>
-      <?= $this->render('requirement.php') ?>
-      <?= $this->render('faq.php') ?>
+      <?= $this->render('guarantees.php'); ?>
+      <?= $this->render('about_us.php') ?>
+      <?= $this->render('requirement.php'); ?>
+      <?= $this->render('faq.php'); ?>
     </div>
   </div>
 </div>
