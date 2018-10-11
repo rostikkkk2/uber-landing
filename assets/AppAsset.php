@@ -13,10 +13,10 @@ class AppAsset extends AssetBundle
         'css/font-awesome.min.css'
     ];
     public $js = [
-      'js/script.js'
+        'js/script.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset'
     ];
 }
