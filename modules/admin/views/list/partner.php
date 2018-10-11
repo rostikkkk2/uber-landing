@@ -3,7 +3,7 @@ $this -> registerCssFile('@web/css/style.css', ['depends' => 'app\assets\AppAsse
   use yii\widgets\ActiveForm;
   use yii\helpers\Html;
 ?>
-<h1 class="text-center mt-100">Новые заявки на работу</h1>
+<h1 class="text-center mt-100">Новые заявки на смену партнера</h1>
 <table class="table">
   <thead>
     <tr>

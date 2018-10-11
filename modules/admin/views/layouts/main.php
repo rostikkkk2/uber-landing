@@ -12,55 +12,67 @@ AppAsset::register($this);
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
-<head>
+  <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-</head>
-<body>
-<?php $this->beginBody() ?>
-
-<div class="wrap">
-    <?php
-    NavBar::begin([
+  </head>
+  <body>
+    <?php $this->beginBody() ?>
+    <div class="wrap">
+      <?php
+      NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+          'class' => 'navbar-inverse navbar-fixed-top',
         ],
-    ]);
-    echo Nav::widget([
+      ]);
+      echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/admin']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/admin/default/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
+          Yii::$app->user->isGuest ? (
+            ['label' => 'Login', 'url' => ['/admin']]
+          ) : (
+            '<li>'
+            . Html::beginForm(['/admin/list'], 'post')
+            . Html::submitButton(
+                'Новые работники', ['class' => 'btn btn-link']
             )
+            . Html::endForm()
+            . '<li>'
+            . Html::beginForm(['/admin/list/partner'])
+            . Html::submitButton(
+                'Работники на смену партнера', ['class' => 'btn btn-link']
+            )
+            . Html::endForm()
+            . '</li>'
+            . '<li>'
+            . Html::beginForm(['/admin/default/logout'], 'post')
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>'
+          )
         ],
-    ]);
-    NavBar::end();
-    ?>
+      ]);
+      NavBar::end();
+      ?>
 
-    <div class="container">
+      <div class="container">
         <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+          'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+      </div>
     </div>
-</div>
-<?php $this->endBody() ?>
-</body>
+    <?php $this->endBody() ?>
+  </body>
 </html>
 <?php $this->endPage() ?>

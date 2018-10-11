@@ -52,6 +52,7 @@ $config = [
       'rules' => [
         '' => '/landing/index',
         'POST admin/<controller>/delete/<id:\d+>' => '/admin/list/delete',
+        'POST admin/<controller>/delete-all' => '/admin/list/delete-all',
       ],
     ],
   ],

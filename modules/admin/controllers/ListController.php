@@ -30,9 +30,19 @@ class ListController extends Controller {
     return $this -> render('page', compact('lists'));
   }
 
+  public function actionPartner() {
+    $this->layout = 'main';
+    $lists = NewWorker::find() -> all();
+    return $this -> render('partner', compact('lists'));    
+  }
+
   public function actionDelete($id) {
     NewWorker::findOne($id) -> delete();
     return $this -> redirect('/admin/list');
   }
   
+  public function actionDeleteAll() {
+    NewWorker::deleteAll();
+    return $this -> redirect('/admin/list');
+  }
 }
