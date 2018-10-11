@@ -1,5 +1,5 @@
 .titile-service {
-  border: 2px solid #ffc24d;
+  border: 2px solid $green;
   font-size: 14px;
   font-weight: 600;
   padding: 15px;
@@ -7,7 +7,6 @@
 }
 
 .about-service {
-  // font-family: 'Fira Sans', 'Tahoma', 'Geneva', 'sans-serif' !important;
   font-size: 17px;
   font-weight: 300;
   padding: 3px;
@@ -30,17 +29,17 @@ img {
   }
 }
 
-.FAQ-wrapper {
-  .headline {
-    color: #ffc24d;
-    font-size: 40px;
-    font-weight: 800;
-  }
+.headline {
+  color: $green;
+  font-size: 40px;
+  font-weight: 800;
+}
 
+.FAQ-wrapper {
+  text-align: center;
   .FAQ {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
-    height: 200px;
     margin-top: 20px;
     padding: 15px;
     &:hover {
@@ -66,17 +65,19 @@ img {
     color: #000;
   }
 }
+
 .requirement-wrapper {
   .requirement {
-    text-align: center;
     padding: 15px;
+    text-align: center;
     p {
-      width: 80%;
       margin: 20px auto;
+      width: 80%;
     }
+
     img {
-      width: 40px;
       height: 40px;
+      width: 40px;
     }
   }
 }

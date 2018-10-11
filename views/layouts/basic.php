@@ -45,9 +45,9 @@
               <ul class="mt-25 nav-menu-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#requiremets">Требования</a></li>
-                <li><a href="#">Вопросы</a></li>
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Контакты</a></li>
+                <li><a href="#">Вопросы</a></li>
               </ul>
             </div>
             <div class="col-xs-9 col-sm-4 text-center hidden-md hidden-lg">
@@ -58,16 +58,17 @@
                 <div class="dropdown-menu nav-btns-menu-phone" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="#guarantees">Преимущества</a><br>
                   <a class="dropdown-item" href="#requiremets">Требования</a></br>
-                  <a class="dropdown-item" href="#">Вопросы</a></br>
                   <a class="dropdown-item" href="#">О нас</a></br>
-                  <a class="dropdown-item" href="#">Контакты</a>
+                  <a class="dropdown-item" href="#">Контакты</a></br>
+                  <a class="dropdown-item" href="#">Вопросы</a></br>
+                  <a href="tel:+380983432725"><b>0983432725</b></a>
                 </div>
               </div>
             </div>
             <div class="hidden-xs col-sm-5 col-md-2">
               <div class="mt-27 fs-19">
                 <i class="glyphicon glyphicon-earphone"></i>
-                <b>0983432725</b>
+              <a href="tel:+380983432725"><b>0983432725</b></a>
               </div>
             </div>
           </div>
@@ -108,13 +109,44 @@
     </header>
     <main>
       <div class="content">
-        <?php require(__DIR__ . '/modal-forms/modalFormWorker.php'); ?>
-        <?php require(__DIR__ . '/modal-forms/modalFormPartner.php'); ?>
+        <?= $this->render ('./modal-forms/modalFormWorker.php'); ?>
+        <?= $this->render ('./modal-forms/modalFormPartner.php'); ?>
         <?= $content ?>
       </div>
     </main>
-    <footer>
-
+    <footer class="mt-25">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <p class="fs-18 mt-25 c-white">uberUKRAINE_Cab</p>
+          </div>
+          <div class="col-md-7">
+            <ul class="mt-25">
+              <li><a href="#guarantees">Преимущества</a></li>
+              <li><a href="#requiremets">Требования</a></li>
+              <li>О нас</li>
+              <li>Контакты</li>
+              <li>Вопросы</li>
+            </ul>
+          </div>
+          <div class="col-md-3 number-footer">
+            <div class="mt-22 fs-22">
+              <i class="c-white glyphicon glyphicon-earphone fs-18"></i>
+              <a href="tel:+380983432725"><b>0983432725</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-30 mt-20">
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ubercab.driver&hl=ru">
+              <img src="images/play.png" alt="">
+            </a>
+            <a class="ml-25" target="_blank" href="https://itunes.apple.com/ru/app/uber-driver-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9/id1131342792?mt=8">
+              <img src="images/appstore.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
     <?php $this -> endBody(); ?>
   </body>

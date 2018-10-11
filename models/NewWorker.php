@@ -8,7 +8,7 @@ class NewWorker extends \yii\db\ActiveRecord {
 
     public static function tableName()
     {
-        return 'new_worker';
+        return 'worker';
     }
 
     public function rules() {

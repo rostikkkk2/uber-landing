@@ -26,9 +26,9 @@ AppAsset::register($this);
         <?= $form_new_worker -> field($new_worker, 'name_car') -> textInput(['class' => 'input-name', 'placeholder' => 'Марка машины']) -> label('Марка машины'); ?>
         <?= $form_new_worker -> field($new_worker, 'year_born_car') -> textInput(['class' => 'input-name', 'placeholder' => 'Год выпуска']) -> label('Год выпуска'); ?>
         <?= $form_new_worker -> field($new_worker, 'city') -> dropDownList([
-           'Днепр' => 'Днепр',
-           'Киев' => 'Киев',
-           'Запорожье' => 'Запорожье'
+          'Днепр' => 'Днепр',
+          'Киев' => 'Киев',
+          'Запорожье' => 'Запорожье'
         ]) -> label('Город');
         ?>
       </div>
