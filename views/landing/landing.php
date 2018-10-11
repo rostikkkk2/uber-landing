@@ -7,6 +7,7 @@
   <div class="row">
     <div class="col-md-12">
       <?php require(__DIR__ . '/guarantees.php'); ?>
+      <?php require(__DIR__ . '/about_us.php') ?>
       <?php require(__DIR__ . '/requirement.php'); ?>
       <?php require(__DIR__ . '/faq.php'); ?>
     </div>
