@@ -3,7 +3,7 @@
 use yii\db\Migration;
 
 class m181007_092117_create_new_worker_table extends Migration {
-  
+
     public function safeUp() {
     $this -> createTable('worker', [
       'id' => $this -> primaryKey(),
