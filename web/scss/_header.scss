@@ -1,13 +1,20 @@
 @import 'variables';
 
-.header {
+.basic-header {
   background-blend-mode: overlay;
-  background-image: url('../images/header-img.png'), linear-gradient(45deg, #211e1e, #727272);
+  background-image: url('../images/header-img.png'), linear-gradient(45deg, #211e1e, #4d4d4d);
   background-position: initial;
   background-size: cover;
   margin-bottom: 50px;
-  min-height: 33pc;
+  min-height: 31pc;
   li {
+    a {
+      text-decoration: none;
+      color: #43a0ff;
+      &:hover {
+        color: #ba97ff;
+      }
+    }
     color: $white;
     display: inline-block;
     font-size: 21px;
@@ -16,25 +23,82 @@
   }
 }
 
-.new-worker-form {
-  input, button {
-    border: 0;
-    border-radius: 17px;
-    color: #000;
-    min-height: 36px;
-    outline: none;
-    text-align: center;
-    width: 191px;
+.btn-new-worker-change-partner {
+  outline: none;
+  width: 221px;
+  font-weight: bold;
+  height: 50px;
+  border: none;
+  border-radius: 23px;
+  font-size: 17px;
+  background: linear-gradient(45deg, #337ab7, #4b0d57);
+}
 
+.about-us-img {
+  background-image: url(../images/about_us.jpeg);
+  height: 29pc;
+  background-repeat: no-repeat;
+}
+
+.nav-btns-menu-phone {
+
+}
+
+.modal-dialog {
+  width: 400px !important;
+  //сделать медиа ширину 320 под телефон
+  margin-top: 100px !important;
+  margin: auto;
+}
+
+.worker-partner-modal-form {
+  .modal-dialog{
+    width: 24%;
+  }
+
+  .modal-header, .modal-footer {
+    border: none;
+    text-align: center;
+  }
+
+  .btn-submit-worker-partner {
+    font-weight: bold;
+    background-color: #00a1ff;
+    width: 50%;
+    border-radius: 9px;
+  }
+
+  .modal-content {
+    background: linear-gradient(45deg, #1957e5, #8cf4ff);
+    border: none;
+  }
+
+  .modal-title {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .form-worker, .form-partner {
+    label {
+      color: white;
+      font-size: 16px;
+    }
+    .form-group {
+      text-align: left;
+    }
+    text-align: center;
+    .input-name {
+      width: 100%;
+      padding: 6px 12px;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }
   }
 }
 
-.form-new-worker{
-  .form-group {
-    display: inline-block;
-  }
-
-  .input-name {
-    color: #000;
-  }
+.change-partner {
+  background: linear-gradient(45deg, #7d4688, #337ab7);
 }
