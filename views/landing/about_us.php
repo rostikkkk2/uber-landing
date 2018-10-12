@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12 mb-50 mt-50 text-center">
-      <span class="fs-30">О нас</span>
+    <div class="col-md-12">
+      <h2 class="text-center mb-50 mt-50 headline">О нас</h2>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 ">
+    <div class="col-md-6">
       <div class="about-us-img"></div>
     </div>
     <div class="fs-21">
