@@ -4,6 +4,8 @@
   use yii\widgets\ActiveForm;
   use app\models\NewWorker;
   use app\models\Partner;
+  use yii\bootstrap\Nav;
+  use yii\bootstrap\NavBar;
   AppAsset::register($this);
 ?>
 <?php $this -> beginPage(); ?>
@@ -38,8 +40,8 @@
       <nav>
         <div class="container">
           <div class="row">
-            <div class="col-sm-3 col-xs-3 col-md-2 ">
-              <h1 class="">uber</h1>
+            <div class="hidden-sm hidden-xs col-md-2 ">
+              <img id="logo" src="/images/logo.png" alt="logo">
             </div>
             <div class="col-md-8 hidden-xs hidden-sm">
               <ul class="mt-25 nav-menu-titles">
@@ -50,40 +52,73 @@
                 <li><a href="#">Вопросы</a></li>
               </ul>
             </div>
-            <div class="col-xs-9 col-sm-4 text-center hidden-md hidden-lg">
-              <div class="dropdown show">
-                <button class="btn back-none btn-secondary mt-15 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="glyphicon glyphicon-align-justify fs-25"></i>
-                </button>
-                <div class="dropdown-menu nav-btns-menu-phone" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#guarantees">Преимущества</a><br>
-                  <a class="dropdown-item" href="#requiremets">Требования</a></br>
-                  <a class="dropdown-item" href="#">О нас</a></br>
-                  <a class="dropdown-item" href="#">Контакты</a></br>
-                  <a class="dropdown-item" href="#">Вопросы</a></br>
-                  <a href="tel:+380983432725"><b>0983432725</b></a>
-                </div>
-              </div>
-            </div>
             <div class="hidden-xs col-sm-5 col-md-2">
               <div class="mt-27 fs-19">
                 <i class="glyphicon glyphicon-earphone"></i>
               <a href="tel:+380983432725"><b>0983432725</b></a>
               </div>
             </div>
-          </div>
-        </div>
-      </nav>
+            <div class="col-xs-12 col-sm-12 text-right hidden-md hidden-lg">
+              <!-- <div class="dropdown show">
+                <button class="btn back-none btn-secondary mt-15 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="glyphicon glyphicon-align-justify fs-25"></i>
+                </button>
+                <div class="dropdown-menu nav-btns-menu-phone" aria-labelledby="dropdownMenuLink">
+                  <div class="drop-menu-item">
+                    <a href="#guarantees">Преимущества</a><br>
+                  </div>
+                  <div class="drop-menu-item">
+                    <a class="" href="#requiremets">Требования</a></br>
+                  </div>
+                  <div class="drop-menu-item">
+                    <a class="" href="#">О нас</a></br>
+                  </div>
+                  <div class="drop-menu-item">
+                    <a class="" href="#">Контакты</a></br>
+                  </div>
+                  <div class="drop-menu-item">
+                    <a class="" href="#">Вопросы</a></br>
+                  </div>
+                  <div class="text-center fs-18">
+                    <i class="glyphicon glyphicon-earphone"></i>
+                    <a class="" href="tel:+380983432725"><b>0983432725</b></a>
+                  </div>
+                </div>
+              </div> -->
+              <?php
+        NavBar::begin([
+          'brandLabel' => '<img id="logo" src="/images/logo.png" alt="logo">',
+          'brandUrl' => Yii::$app->homeUrl,
+          'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+          ],
+        ]);
+        echo Nav::widget([
+          'options' => ['class' => 'navbar-nav nav-menu-to-phone navbar-right'],
+          'items' => [
+            '<li><a href="#guarantees">' . 'Преимущества' . '</a></li>',
+            '<li><a href="#">' . 'Требования' . '</a></li>',
+            '<li><a href="#">' . 'О нас' . '</a></li>',
+            '<li><a href="#">' . 'Контакты' . '</a></li>',
+            '<li><a href="#">' . 'Вопросы' . '</a></li>'
+          ],
+        ]);
+        NavBar::end();
+      ?>
+
+              </div>
+            </div>
+          </nav>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-40">
-            <b class="fs-36">Как начать работать с Uber</b>
+            <b class="fs-36 fs-i">Как начать работать с Uber</b>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-2 col-sm-2 col-md-2"></div>
           <div class="col-xs-8 col-sm-8 col-md-8 mt-15">
-            <span class="fs-20">
+            <span class="fs-20 fs-o">
               Uber - доверенный партнер компании Uber в Украине.
               Для того, чтобы начать работать, отправляйте заявку через форму,
               что расположена ниже. В ближайшее время с Вами свяжется наш представитель

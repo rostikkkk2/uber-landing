@@ -1,7 +1,7 @@
 <div class="row">
   <a name="guarantees"></a>
   <div class="col-md-12 wrapper-guarantees">
-    <h2 class="text-center mb-25 mt-25 headline">Преимущества</h2>
+    <h2 class="text-center mb-25 headline">Преимущества</h2>
     <div class="row">
       <div class="col-md-12">
         <p class="text-center">
@@ -50,23 +50,6 @@
           <img src="images/guarantees_6.png" alt="">
         </p>
         <p class="about-service">Удобное приложение</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-4 mt-25">
-        <!-- <p class="text-center">
-          <img src="images/guarantees_7.png" alt="">
-        </p>
-        <p class="about-service">Компенсация отмененной поездки</p> -->
-      </div>
-      <div class="col-md-4 col-sm-4 mt-25">
-
-      </div>
-      <div class="col-md-4 col-sm-4 mt-25">
-        <!-- <p class="text-center">
-          <img src="images/guarantees_9.png" alt="">
-        </p>
-        <p class="about-service">Круглосуточная техподдержка</p> -->
       </div>
     </div>
   </div>
