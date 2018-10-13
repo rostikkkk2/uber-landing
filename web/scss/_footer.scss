@@ -2,6 +2,10 @@
 footer {
   background-color: $gray;
   text-align: center;
+  img {
+    height: 64px;
+  }
+
   li {
     color: $white;
     display: inline-block;
@@ -13,14 +17,16 @@ footer {
   a {
     color: $white;
     &:hover {
-      color: $green;
+      color: $pure-pink;
       text-decoration: none;
       transition: all 1s cubic-bezier(0.53, 0.1, 0, 0.91);
     }
   }
-
-  img {
-    height: auto;
-    width: auto;
+  .app-links{
+    img {
+      height: auto;
+      width: auto;
+    }
   }
+
 }

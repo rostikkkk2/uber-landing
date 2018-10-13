@@ -33,6 +33,8 @@ class LandingController extends Controller {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=286979119&text={$message}");
         curl_exec($curl);
+        curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=384922121&text={$message}");
+        curl_exec($curl);
         Yii::$app -> session -> setFlash('success', 'Ваш запрос отправлен');
       }else {
         Yii::$app -> session -> setFlash('error', 'Ваш запрос не отправлен');

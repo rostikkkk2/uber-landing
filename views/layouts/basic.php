@@ -39,76 +39,68 @@
       <?php endif; ?>
       <nav>
         <div class="container">
-          <div class="row">
-            <div class="hidden-sm hidden-xs col-md-2 ">
+          <div class="row text-center">
+            <div class="col-lg-2 col-md-1 hidden-sm hidden-xs">
               <img id="logo" src="/images/logo.png" alt="logo">
             </div>
-            <div class="col-md-8 hidden-xs hidden-sm">
+            <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
               <ul class="mt-25 nav-menu-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#requiremets">Требования</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Вопросы</a></li>
+                <li><a href="#about_us">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#faq">Вопросы</a></li>
               </ul>
             </div>
-            <div class="hidden-xs col-sm-5 col-md-2">
-              <div class="mt-27 fs-19">
+            <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+              <div class="mt-15 fs-19">
                 <i class="glyphicon glyphicon-earphone"></i>
-              <a href="tel:+380983432725"><b>0983432725</b></a>
+                <a href="tel:+380994790063"><b>+380994790063</b></a>
+                <br>
+                <i class="glyphicon glyphicon-earphone"></i>
+                <a href="tel:+380965968909"><b>+380965968909</b></a>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 text-right hidden-md hidden-lg">
-              <!-- <div class="dropdown show">
-                <button class="btn back-none btn-secondary mt-15 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="glyphicon glyphicon-align-justify fs-25"></i>
-                </button>
-                <div class="dropdown-menu nav-btns-menu-phone" aria-labelledby="dropdownMenuLink">
-                  <div class="drop-menu-item">
-                    <a href="#guarantees">Преимущества</a><br>
-                  </div>
-                  <div class="drop-menu-item">
-                    <a class="" href="#requiremets">Требования</a></br>
-                  </div>
-                  <div class="drop-menu-item">
-                    <a class="" href="#">О нас</a></br>
-                  </div>
-                  <div class="drop-menu-item">
-                    <a class="" href="#">Контакты</a></br>
-                  </div>
-                  <div class="drop-menu-item">
-                    <a class="" href="#">Вопросы</a></br>
-                  </div>
-                  <div class="text-center fs-18">
-                    <i class="glyphicon glyphicon-earphone"></i>
-                    <a class="" href="tel:+380983432725"><b>0983432725</b></a>
-                  </div>
-                </div>
-              </div> -->
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 navbar-xs-sm hidden-md hidden-lg">
               <?php
-        NavBar::begin([
-          'brandLabel' => '<img id="logo" src="/images/logo.png" alt="logo">',
-          'brandUrl' => Yii::$app->homeUrl,
-          'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-          ],
-        ]);
-        echo Nav::widget([
-          'options' => ['class' => 'navbar-nav nav-menu-to-phone navbar-right'],
-          'items' => [
-            '<li><a href="#guarantees">' . 'Преимущества' . '</a></li>',
-            '<li><a href="#">' . 'Требования' . '</a></li>',
-            '<li><a href="#">' . 'О нас' . '</a></li>',
-            '<li><a href="#">' . 'Контакты' . '</a></li>',
-            '<li><a href="#">' . 'Вопросы' . '</a></li>'
-          ],
-        ]);
-        NavBar::end();
-      ?>
-
-              </div>
+                NavBar::begin([
+                  'brandLabel' => '<img id="logo" src="/images/logo.png" alt="logo">',
+                  'brandUrl' => Yii::$app->homeUrl,
+                  'renderInnerContainer'=>false,
+                  'options' => [
+                    'class' => 'navbar-inverse',
+                  ],
+                ]);
+                echo Nav::widget([
+                  'options' => ['class' => 'navbar-nav'],
+                  'items' => [
+                    '<li><a href="#guarantees">Преимущества</a></li>',
+                    '<li><a href="#requiremets">Требования</a></li>',
+                    '<li><a href="#about_us">О нас</a></li>',
+                    '<li><a href="#contacts">Контакты</a></li>',
+                    '<li><a href="#faq">Вопросы</a></li>',
+                    '<li class="hidden-sm">
+                      <a href="tel:+380983432725">
+                        <i class="glyphicon glyphicon-earphone"></i>
+                        <b>+380994790063</b>
+                      </a>
+                    </li>',
+                    '<li class="hidden-sm">
+                      <a href="tel:+380983432725">
+                        <i class="glyphicon glyphicon-earphone"></i>
+                        <b>+380965968909</b>
+                      </a>
+                    </li>'
+                  ],
+                ]);
+                NavBar::end();
+              ?>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-40">
@@ -153,26 +145,29 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <p class="fs-18 mt-25 c-white">uberUKRAINE_Cab</p>
+              <img id="logo" src="/images/logo.png" alt="logo">            
           </div>
           <div class="col-md-7">
             <ul class="mt-25">
               <li><a href="#guarantees">Преимущества</a></li>
               <li><a href="#requiremets">Требования</a></li>
-              <li>О нас</li>
-              <li>Контакты</li>
-              <li>Вопросы</li>
+              <li><a href="#about_us">О нас</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+              <li><a href="#faq">Вопросы</a></li>
             </ul>
           </div>
           <div class="col-md-3 number-footer">
-            <div class="mt-22 fs-22">
-              <i class="c-white glyphicon glyphicon-earphone fs-18"></i>
-              <a href="tel:+380983432725"><b>0983432725</b></a>
+            <div class="mt-10 fs-22">
+                <i class="glyphicon glyphicon-earphone"></i>
+                <a href="tel:+380994790063"><b>+380994790063</b></a>
+                <br>
+                <i class="glyphicon glyphicon-earphone"></i>
+                <a href="tel:+380965968909"><b>+380965968909</b></a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 mb-30 mt-20">
+          <div class="col-md-12 app-links mb-30 mt-20">
             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ubercab.driver&hl=ru">
               <img src="images/play.png" alt="">
             </a>

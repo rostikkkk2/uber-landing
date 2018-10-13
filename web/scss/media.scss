@@ -1,3 +1,5 @@
+@import 'variables';
+
 @media (max-width: 2559px) {
   .FAQ {
     height: 225px;
@@ -12,15 +14,17 @@
   .FAQ {
     height: 300px;
   }
+
   footer {
     li {
-      text-align: center;
       color: $white;
       display: inline-block;
       font-size: 18px;
       list-style-type: none;
       margin: 0 5px;
+      text-align: center;
     }
+
     .number-footer {
       display: block;
     }
@@ -31,15 +35,17 @@
   .FAQ {
     height: 300px;
   }
+
   footer {
     li {
-      text-align: center;
       color: $white;
       display: inline-block;
       font-size: 18px;
       list-style-type: none;
       margin: 0 5px;
+      text-align: center;
     }
+
     .number-footer {
       display: block;
     }
@@ -50,20 +56,44 @@
   .FAQ {
     height: 150px;
   }
+
+  .basic-header {
+    li {
+      a { 
+        color: #43a0ff;
+        text-decoration: none;
+        &:hover {
+          color: #ba97ff;
+        }
+      }
+      color: $white;
+      display: block;
+      font-size: 15px;
+      list-style-type: none;
+    }
+
+    .container {
+      width: 100%;
+      .navbar-xs-sm {
+        padding: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 550px) {
   .FAQ {
     height: 190px;
   }
+
   footer {
     li {
-      text-align: center;
       color: $white;
       display: block;
       font-size: 18px;
       list-style-type: none;
       margin: 15px 0;
+      text-align: center;
     }
   }
 }
@@ -72,14 +102,15 @@
   .FAQ {
     height: 300px;
   }
+
   footer {
     li {
-      text-align: center;
       color: $white;
       display: block;
       font-size: 18px;
       list-style-type: none;
       margin: 15px 0;
+      text-align: center;
     }
   }
 }
@@ -88,14 +119,15 @@
   .FAQ {
     height: 300px;
   }
+
   footer {
     li {
-      text-align: center;
       color: $white;
       display: block;
       font-size: 18px;
       list-style-type: none;
       margin: 15px 0;
+      text-align: center;
     }
   }
 }
