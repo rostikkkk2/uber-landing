@@ -17,7 +17,7 @@ $this -> registerCssFile('@web/css/style.css', ['depends' => 'app\assets\AppAsse
   <tbody>
       <?php
       $drop_all = ActiveForm::begin([
-        'action' => ['list/delete-all'],
+        'action' => ['list/delete-partner-all'],
         'method' => 'post',
       ]);
       ?>
@@ -27,13 +27,12 @@ $this -> registerCssFile('@web/css/style.css', ['depends' => 'app\assets\AppAsse
         <tr>
           <td><?= $list -> name ?></td>
           <td><?= $list -> phone_number ?></td>
-          <td><?= $list -> name_car ?></td>
-          <td><?= $list -> year_born_car ?></td>
-          <td>data</td>
+          <td><?= $list -> email ?></td>
+          <td><?= $list -> datetime ?></td>
           <td>
             <?php
             $drop = ActiveForm::begin([
-              'action' => ['list/delete/' . $list->id],
+              'action' => ['list/delete-partner/' . $list->id],
               'method' => 'post',
             ]);
             ?>

@@ -2,16 +2,17 @@
 
 .basic-header {
   background-blend-mode: overlay;
-  background-image: url('../images/header-img.png'), linear-gradient(45deg, #211e1e, #4d4d4d);
+  background-image: url('../images/header-img.png'), linear-gradient(45deg, #6b6b6b, #2f2e2e);
   background-position: initial;
   background-size: cover;
   margin-bottom: 50px;
   min-height: 31px;
   a { 
-    color: $light-blue;
+    color: $white;
     text-decoration: none;
     &:hover {
       color: #ba97ff;
+      transition: all 1s cubic-bezier(0.53, 0.1, 0, 0.91);
     }
   }
 

@@ -83,8 +83,27 @@ img {
 }
 
 .contacts {
-  background-color: $gray;
-  color: #fff;
+  color: $gray;
   height: 170px;
   text-align: center;
+  a {
+    color: $gray;
+    &:hover {
+      color: $pure-pink;
+      text-decoration: none;
+    }
+  }
+
+  .contact-info {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    img {
+      height: 38px;
+      width: 38px;
+    }
+
+    &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
 }

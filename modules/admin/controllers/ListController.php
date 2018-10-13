@@ -6,6 +6,7 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use app\models\NewWorker;
+use app\models\Partner;
 
 class ListController extends Controller {
   public  function behaviors() {
@@ -26,23 +27,33 @@ class ListController extends Controller {
 
   public function actionIndex() {
     $this->layout = 'main';
-      $lists = NewWorker::find() -> all();
-    return $this -> render('page', compact('lists'));
+    $lists = NewWorker::find() -> all();
+    return $this -> render('worker', compact('lists'));
   }
 
   public function actionPartner() {
     $this->layout = 'main';
-    $lists = NewWorker::find() -> all();
+    $lists = Partner::find() -> all();
     return $this -> render('partner', compact('lists'));    
   }
 
-  public function actionDelete($id) {
+  public function actionDeleteWorker($id) {
     NewWorker::findOne($id) -> delete();
     return $this -> redirect('/admin/list');
   }
   
-  public function actionDeleteAll() {
+  public function actionDeleteWorkerAll() {
     NewWorker::deleteAll();
     return $this -> redirect('/admin/list');
+  }
+
+  public function actionDeletePartner($id) {
+    Partner::findOne($id) -> delete();
+    return $this -> redirect('/admin/list/partner');
+  }
+  
+  public function actionDeletePartnerAll() {
+    Partner::deleteAll();
+    return $this -> redirect('/admin/list/partner');
   }
 }
