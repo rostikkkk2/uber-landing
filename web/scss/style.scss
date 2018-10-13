@@ -1,0 +1,19 @@
+@import 'helpers';
+@import 'variables';
+@import 'header';
+@import 'home';
+@import 'footer';
+@import 'media';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// body {
+//     font-family: 'DeliciousRoman', serif;
+// }
+
+html {
+  scroll-behavior: smooth;
+}

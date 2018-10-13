@@ -1,0 +1,109 @@
+.titile-service {
+  border: 2px solid $green;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+}
+
+.about-service {
+  font-size: 17px;
+  font-weight: 300;
+  padding: 3px;
+  text-align: center;
+}
+
+img {
+  font-size: 64px;
+  height: 64px;
+  line-height: 64px;
+  width: auto;
+}
+
+.wrapper-guarantees {
+  img {
+    font-size: 80px;
+    height: 80px;
+    line-height: 80px;
+    width: auto;
+  }
+}
+
+.headline {
+  color: $light-blue;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.FAQ-wrapper {
+  text-align: center;
+  .FAQ {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 15px;
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .title-FAQ {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .about-FAQ {
+      font-size: 15px;
+    }
+  }
+}
+.form-new-worker{
+  .form-group {
+    display: inline-block;
+  }
+
+  .input-name {
+    color: #000;
+  }
+}
+
+.requirement-wrapper {
+  .requirement {
+    padding: 15px;
+    text-align: center;
+    p {
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.contacts {
+  color: $gray;
+  height: 170px;
+  text-align: center;
+  a {
+    color: $gray;
+    &:hover {
+      color: $pure-pink;
+      text-decoration: none;
+    }
+  }
+
+  .contact-info {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    img {
+      height: 38px;
+      width: 38px;
+    }
+
+    &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
