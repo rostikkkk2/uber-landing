@@ -1,6 +1,7 @@
 <?php
 
 use yii\db\Migration;
+use yii\db\Expression;
 
 class m181007_092117_create_new_worker_table extends Migration {
 
@@ -12,7 +13,7 @@ class m181007_092117_create_new_worker_table extends Migration {
       'name_car' => $this -> string(50) -> notNull(),
       'year_born_car' => $this -> integer(4) -> notNull(),
       'city' => $this -> string(50) -> notNull(),
-      'date' => $this -> date() -> notNull()
+      'datetime' => $this -> timestamp() -> defaultValue(new Expression('NOW()'))
     ]);
   }
 

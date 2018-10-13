@@ -1,6 +1,7 @@
 <?php
 
 use yii\db\Migration;
+use yii\db\Expression;
 
 class m181010_222351_create_partner_table extends Migration {
   
@@ -11,7 +12,7 @@ class m181010_222351_create_partner_table extends Migration {
       'phone_number' => $this -> biginteger(12) -> notNull(),
       'email' => $this -> string(50) -> notNull(),
       'city' => $this -> string(50) -> notNull(),
-      'date' => $this -> date() -> notNull()
+      'datetime' => $this -> timestamp() -> defaultValue(new Expression('NOW()'))
     ]);
   }
 

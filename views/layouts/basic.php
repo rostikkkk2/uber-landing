@@ -46,8 +46,8 @@
             <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
               <ul class="mt-25 nav-menu-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
-                <li><a href="#requiremets">Требования</a></li>
                 <li><a href="#about_us">О нас</a></li>
+                <li><a href="#requirements">Требования</a></li>
                 <li><a href="#contacts">Контакты</a></li>
                 <li><a href="#faq">Вопросы</a></li>
               </ul>
@@ -77,18 +77,18 @@
                   'options' => ['class' => 'navbar-nav'],
                   'items' => [
                     '<li><a href="#guarantees">Преимущества</a></li>',
-                    '<li><a href="#requiremets">Требования</a></li>',
                     '<li><a href="#about_us">О нас</a></li>',
+                    '<li><a href="#requirements">Требования</a></li>',
                     '<li><a href="#contacts">Контакты</a></li>',
                     '<li><a href="#faq">Вопросы</a></li>',
                     '<li class="hidden-sm">
-                      <a href="tel:+380983432725">
+                      <a href="tel:+380994790063">
                         <i class="glyphicon glyphicon-earphone"></i>
                         <b>+380994790063</b>
                       </a>
                     </li>',
                     '<li class="hidden-sm">
-                      <a href="tel:+380983432725">
+                      <a href="tel:+380965968909">
                         <i class="glyphicon glyphicon-earphone"></i>
                         <b>+380965968909</b>
                       </a>
@@ -150,8 +150,8 @@
           <div class="col-md-7">
             <ul class="mt-25">
               <li><a href="#guarantees">Преимущества</a></li>
-              <li><a href="#requiremets">Требования</a></li>
               <li><a href="#about_us">О нас</a></li>
+              <li><a href="#requirements">Требования</a></li>
               <li><a href="#contacts">Контакты</a></li>
               <li><a href="#faq">Вопросы</a></li>
             </ul>

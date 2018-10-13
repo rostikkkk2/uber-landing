@@ -51,8 +51,10 @@ $config = [
       'showScriptName' => false,
       'rules' => [
         '' => '/landing/index',
-        'POST admin/<controller>/delete/<id:\d+>' => '/admin/list/delete',
-        'POST admin/<controller>/delete-all' => '/admin/list/delete-all',
+        'POST admin/<controller>/delete-worker/<id:\d+>' => '/admin/list/delete-worker',
+        'POST admin/<controller>/delete-worker-all' => '/admin/list/delete-worker-all',
+        'POST admin/<controller>/delete-partner/<id:\d+>' => '/admin/list/delete-partner',
+        'POST admin/<controller>/delete-partner-all' => '/admin/list/delete-partner-all',
       ],
     ],
   ],

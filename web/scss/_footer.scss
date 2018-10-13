@@ -6,6 +6,12 @@ footer {
     height: 64px;
   }
 
+  .number-footer {
+    i {
+      color: $white;
+    }
+  }
+
   li {
     color: $white;
     display: inline-block;
