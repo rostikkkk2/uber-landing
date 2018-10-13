@@ -44,7 +44,7 @@
               <img id="logo" src="/images/logo.png" alt="logo">
             </div>
             <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
-              <ul class="mt-25 nav-menu-titles ff-p">
+              <ul class="mt-25 nav-menu-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#about_us">О нас</a></li>
                 <li><a href="#requirements">Требования</a></li>

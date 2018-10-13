@@ -7,15 +7,16 @@
           <div class="col-md-offset-2 col-md-8">
             <div class="contact-info fs-22">
               <i class="glyphicon glyphicon-earphone"></i>
-              <a href="tel:+380994790063"><b>+380994790063</b></a>
+              <a href="tel:+380994790063">+380994790063</a>
               <i class="glyphicon glyphicon-earphone"></i>
-              <a href="tel:+380965968909"><b>+380965968909</b></a>
+              <a href="tel:+380965968909">+380965968909</a>
               <br>
               <i class="glyphicon glyphicon-envelope"></i>
-              <a href="mailto:uberukrainecab@gmail.com"><b>uberukrainecab@gmail.com</b></a>
+              <a href="mailto:uberukrainecab@gmail.com">uberukrainecab@gmail.com</a>
               <br>
               <a target="_blank" href="https://www.instagram.com/uberukrainecab/?hl=ru">
                 <img src="/images/icon-instagram.png" alt="">
+                <span>@uberukrainecab</span>
               </a>
             </div>
           </div>
