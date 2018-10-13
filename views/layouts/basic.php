@@ -44,7 +44,7 @@
               <img id="logo" src="/images/logo.png" alt="logo">
             </div>
             <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
-              <ul class="mt-25 nav-menu-titles">
+              <ul class="mt-25 nav-menu-titles ff-p">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#about_us">О нас</a></li>
                 <li><a href="#requirements">Требования</a></li>
@@ -104,7 +104,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-40">
-            <b class="fs-36 fs-i">Как начать работать с Uber</b>
+            <b class="fs-36 ff-p">Как начать работать с Uber</b>
           </div>
         </div>
         <div class="row">
@@ -121,15 +121,15 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-43 mb-44">
-            <b class="fs-23">Оставьте заявку и мы вам перезвоним:</b>
+            <b class="fs-23 ff-p">Оставьте заявку и мы вам перезвоним:</b>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-            <button type="button" id="btn_new_worker" class="btn-new-worker-change-partner mb-30">Стать водителем</button>
+            <button type="button" id="btn_new_worker" class="ff-p btn-new-worker-change-partner mb-30">Стать водителем</button>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-            <button type="button" id="btn_partner" class="btn-new-worker-change-partner change-partner mb-30">Сменить партнера</button>
+            <button type="button" id="btn_partner" class="ff-p btn-new-worker-change-partner change-partner mb-30">Сменить партнера</button>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-              <img id="logo" src="/images/logo.png" alt="logo">            
+              <img id="logo" src="/images/logo.png" alt="logo">
           </div>
           <div class="col-md-7">
             <ul class="mt-25">

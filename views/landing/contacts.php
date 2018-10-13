@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <a name="contacts"></a>
-    <h2 class="text-center mb-25 headline">Контакты</h2>
+    <h2 class="text-center mb-25 ff-p headline">Контакты</h2>
     <div class="col-md-12">
       <div class="contacts">
         <div class="row">
