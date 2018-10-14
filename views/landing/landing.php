@@ -9,7 +9,7 @@
       <div class="container">
         <?= $this->render('guarantees.php'); ?>
       </div>
-      <div class="container">
+      <div class="container-fluid padding-0">
         <?= $this->render('about_us.php') ?>
       </div>
       <div class="container">
