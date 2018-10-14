@@ -44,7 +44,7 @@
               <img id="logo" src="/images/logo.png" alt="logo">
             </div>
             <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
-              <ul class="mt-25 nav-menu-titles">
+              <ul class="mt-25 nav-menu-titles font-to-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#about_us">О нас</a></li>
                 <li><a href="#requirements">Требования</a></li>
@@ -104,13 +104,13 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-40">
-            <b class="fs-36 ff-p">Как начать работать с Uber</b>
+            <b class="fs-36 font-to-titles">Как начать работать с Uber</b>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-2 col-sm-2 col-md-2"></div>
           <div class="col-xs-8 col-sm-8 col-md-8 mt-15">
-            <span class="fs-20 fs-o">
+            <span class="fs-20 fs-o font-to-text">
               Uber - доверенный партнер компании Uber в Украине.
               Для того, чтобы начать работать, отправляйте заявку через форму,
               что расположена ниже. В ближайшее время с Вами свяжется наш представитель
@@ -121,7 +121,7 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 text-center mt-43 mb-44">
-            <b class="fs-23 ff-p">Оставьте заявку и мы вам перезвоним:</b>
+            <b class="fs-23 font-to-titles">Оставьте заявку и мы вам перезвоним:</b>
           </div>
         </div>
         <div class="row">
@@ -148,7 +148,7 @@
               <img id="logo" src="/images/logo.png" alt="logo">
           </div>
           <div class="col-md-7">
-            <ul class="mt-25">
+            <ul class="mt-25 font-to-titles">
               <li><a href="#guarantees">Преимущества</a></li>
               <li><a href="#about_us">О нас</a></li>
               <li><a href="#requirements">Требования</a></li>
@@ -157,7 +157,7 @@
             </ul>
           </div>
           <div class="col-md-3 number-footer">
-            <div class="mt-10 fs-22">
+            <div class="mt-10 fs-22 font-to-titles">
                 <i class="glyphicon glyphicon-earphone"></i>
                 <a href="tel:+380994790063"><b>+380994790063</b></a>
                 <br>

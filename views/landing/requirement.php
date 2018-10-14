@@ -1,8 +1,8 @@
 <div class="row mt-50">
   <a name="requirements"></a>
-    <h2 class="text-center mb-25 headline ff-p">Требования к водителю</h2>
+    <h2 class="text-center mb-25 headline font-to-titles">Требования к водителю</h2>
     <div class="col-md-12">
-      <div class="row requirement-wrapper">
+      <div class="row requirement-wrapper font-to-text">
         <div class="col-md-4 requirement">
           <img class="" src="images/requirements_1.png" alt="">
           <span>Автомобиль от 1990 года</span>

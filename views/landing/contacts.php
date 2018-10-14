@@ -1,11 +1,11 @@
 <div class="container-fluid">
   <a name="contacts"></a>
-    <h2 class="text-center mb-25 ff-p headline">Контакты</h2>
+    <h2 class="text-center mb-25 font-to-titles headline">Контакты</h2>
     <div class="col-md-12">
       <div class="contacts">
         <div class="row">
           <div class="col-md-offset-2 col-md-8">
-            <div class="contact-info fs-22">
+            <div class="contact-info fs-22 font-to-text">
               <i class="glyphicon glyphicon-earphone"></i>
               <a href="tel:+380994790063">+380994790063</a>
               <i class="glyphicon glyphicon-earphone"></i>
