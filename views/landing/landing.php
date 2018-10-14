@@ -3,7 +3,7 @@
   use yii\widgets\ActiveForm;
   use yii\helpers\Html;
 ?>
-<div class="container-fluid">
+<div class="container-fluid margin-15 padding-0">
   <div class="row">
     <div class="col-md-12">
       <div class="container">

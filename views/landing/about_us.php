@@ -7,15 +7,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
+      <div class="col-md-1 hidden-xs"></div>
+      <div class="col-md-10 col-xs-12">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
             <div class="about-us-img text-center">
               <iframe class="about-us-video" src="https://www.youtube.com/embed/NiVXmLkcOiA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-md-6 fs-20 font-to-text">
+          <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 fs-20 font-to-text">
             <p class="mb-30"><b>UberUkraineCab</b> – крупнейший европейский партнер
             Uber в Украине.</p>
             <p class="mb-30">Нам доверяют более 100 000 водителей<br>
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-md-1 hidden-xs"></div>
     </div>
   </div>
 </div>

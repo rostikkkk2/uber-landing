@@ -71,7 +71,7 @@
             <div class="col-xs-12 col-sm-12 navbar-xs-sm hidden-md hidden-lg">
               <?php
                 NavBar::begin([
-                  'brandLabel' => '<img id="logo" src="/images/logo.png" alt="logo">',
+                  'brandLabel' => '<img id="logo" class="logo" src="/images/logo.png" alt="logo">',
                   'brandUrl' => Yii::$app->homeUrl,
                   'renderInnerContainer'=>false,
                   'options' => [
