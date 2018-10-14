@@ -12,19 +12,16 @@
   padding: 3px;
   text-align: center;
 }
-
-img {
-  font-size: 64px;
-  height: 64px;
-  line-height: 64px;
-  width: auto;
+.logo {
+  img {
+    height: 64px;
+    width: auto;
+  }
 }
 
 .wrapper-guarantees {
   img {
-    font-size: 80px;
     height: 80px;
-    line-height: 80px;
     width: auto;
   }
 }
@@ -80,6 +77,16 @@ img {
       width: 40px;
     }
   }
+}
+
+.about-us {
+  background-color: #f3f3f3;
+}
+
+.about-us-video {
+  width: 33pc;
+  height: 18pc;
+  margin-bottom: 44px;
 }
 
 .contacts {

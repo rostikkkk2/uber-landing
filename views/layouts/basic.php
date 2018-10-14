@@ -40,7 +40,7 @@
       <nav>
         <div class="container">
           <div class="row text-center">
-            <div class="col-lg-2 col-md-1 hidden-sm hidden-xs">
+            <div class="col-lg-2 col-md-1 logo hidden-sm hidden-xs">
               <img id="logo" src="/images/logo.png" alt="logo">
             </div>
             <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
