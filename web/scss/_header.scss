@@ -40,6 +40,19 @@
   }
 }
 
+.wrap {
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    .logo-admin {
+      display: inline-block;
+      height: 50px;
+      margin-right: 15px;
+      width: 50px;
+    }
+  }
+}
+
 .btn-new-worker-change-partner {
   background: linear-gradient(45deg, #337ab7, #4b0d57);
   border: 0;

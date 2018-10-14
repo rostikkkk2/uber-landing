@@ -36,17 +36,6 @@ $config = [
       'class' => 'yii\swiftmailer\Mailer',
       'useFileTransport' => true,
     ],
-    'mail' => [
-      'class' => 'yii\swiftmailer\Mailer',
-      'transport' => [
-        'class' => 'Swift_SmtpTransport',
-        'host' => 'smtp.sendgrid.net',
-        'username' => 'apikey',
-        'password' => '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',
-        'port' => '587',
-        'encryption' => 'tls',
-      ]
-    ],
     'log' => [
       'traceLevel' => YII_DEBUG ? 3 : 0,
       'targets' => [

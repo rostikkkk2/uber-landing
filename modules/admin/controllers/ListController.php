@@ -41,19 +41,9 @@ class ListController extends Controller {
     NewWorker::findOne($id) -> delete();
     return $this -> redirect('/admin/list');
   }
-  
-  public function actionDeleteWorkerAll() {
-    NewWorker::deleteAll();
-    return $this -> redirect('/admin/list');
-  }
 
   public function actionDeletePartner($id) {
     Partner::findOne($id) -> delete();
-    return $this -> redirect('/admin/list/partner');
-  }
-  
-  public function actionDeletePartnerAll() {
-    Partner::deleteAll();
     return $this -> redirect('/admin/list/partner');
   }
 }

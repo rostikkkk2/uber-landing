@@ -1,4 +1,4 @@
-<div class="row mt-50">
+<div class="row mt-75">
   <a name="requirements"></a>
     <h2 class="text-center mb-25 headline font-to-titles">Требования к водителю</h2>
     <div class="col-md-12">
