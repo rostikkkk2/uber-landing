@@ -55,10 +55,10 @@
             <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
               <div class="mt-15 fs-19">
                 <i class="glyphicon glyphicon-earphone"></i>
-                <a href="tel:+380994790063"><b>+380994790063</b></a>
+                <a href="tel:+380994790063">+380994790063</a>
                 <br>
                 <i class="glyphicon glyphicon-earphone"></i>
-                <a href="tel:+380965968909"><b>+380965968909</b></a>
+                <a href="tel:+380965968909">+380965968909</a>
               </div>
             </div>
           </div>
@@ -159,10 +159,10 @@
           <div class="col-md-3 number-footer">
             <div class="mt-10 fs-22 font-to-titles">
                 <i class="glyphicon glyphicon-earphone"></i>
-                <a href="tel:+380994790063"><b>+380994790063</b></a>
+                <a href="tel:+380994790063">+380994790063</a>
                 <br>
                 <i class="glyphicon glyphicon-earphone"></i>
-                <a href="tel:+380965968909"><b>+380965968909</b></a>
+                <a href="tel:+380965968909">+380965968909</a>
             </div>
           </div>
         </div>

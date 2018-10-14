@@ -91,6 +91,7 @@ img {
     &:hover {
       color: $pure-pink;
       text-decoration: none;
+      transition: all 1s cubic-bezier(0.53, 0.1, 0, 0.91);
     }
   }
 
