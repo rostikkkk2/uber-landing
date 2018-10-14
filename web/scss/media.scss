@@ -86,6 +86,20 @@
     height: 190px;
   }
 
+  .contacts {
+    .contact-info {
+      word-break: break-all;
+      a {
+        display: block;
+        font-size: 18px;
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+
   footer {
     li {
       color: $white;
@@ -101,6 +115,20 @@
 @media (max-width: 360px) {
   .FAQ {
     height: 300px;
+  }
+
+  .contacts {
+    .contact-info {
+      word-break: break-all;
+      a {
+        display: block;
+        font-size: 18px;
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
   }
 
   footer {
@@ -124,6 +152,20 @@
 
   .FAQ {
     height: 300px;
+  }
+
+  .contacts {
+    .contact-info {
+      word-break: break-all;
+      a {
+        display: block;
+        font-size: 18px;
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
   }
 
   footer {

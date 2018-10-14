@@ -92,10 +92,11 @@
 
 .contacts {
   color: $gray;
-  height: 170px;
+  height: 200px;
   text-align: center;
   a {
     color: $gray;
+    text-decoration: none;
     &:hover {
       color: $pure-pink;
       text-decoration: none;
@@ -107,8 +108,8 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     padding: 20px;
     img {
-      height: 38px;
-      width: 38px;
+      height: 27px;
+      width: 27px;
     }
 
     &:hover {
