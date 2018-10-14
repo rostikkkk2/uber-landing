@@ -14,8 +14,16 @@
   }
 }
 
-.fs-i {
-  font-style: italic;
+.font-to-titles {
+  font-family: 'GenR102';
+}
+
+.font-to-text {
+  font-family: 'Intro';
+}
+
+.ff-p {
+  font-family: Pompadur;
 }
 
 .d-inline-block {
@@ -24,10 +32,6 @@
 
 .drop-menu-phone {
   display: none;
-}
-
-.fs-o {
-  font-style: oblique;
 }
 
 .c-light-blue {
@@ -56,4 +60,18 @@ label {
 
 .padding-0 {
   padding: 0;
+}
+
+@font-face {
+  font-family: 'Intro';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/NewBaskervilleC Bold.ttf')format('truetype');
+}
+
+@font-face {
+  font-family: 'GenR102';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/GenR102.ttf')format('truetype');
 }

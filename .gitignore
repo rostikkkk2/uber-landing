@@ -2,7 +2,8 @@
 /node_modules
 
 #css
-/web/css
+/web/css/style.css
+/web/css/media.css
 
 # phpstorm project files
 .idea
