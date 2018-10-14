@@ -92,24 +92,24 @@
 
 .contacts {
   color: $gray;
-  height: 200px;
   text-align: center;
-  a {
-    color: $gray;
-    text-decoration: none;
-    &:hover {
-      color: $pure-pink;
-      text-decoration: none;
-      transition: all 1s cubic-bezier(0.53, 0.1, 0, 0.91);
-    }
-  }
-
   .contact-info {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     padding: 20px;
-    img {
-      height: 27px;
-      width: 27px;
+    a {
+      color: $gray;
+      margin-top: 10px;
+      text-decoration: none;
+      &:hover {
+        color: $pure-pink;
+        text-decoration: none;
+        transition: all 1s cubic-bezier(0.53, 0.1, 0, 0.91);
+      }
+
+      img {
+        height: 27px;
+        width: 27px;
+      }
     }
 
     &:hover {
@@ -117,3 +117,5 @@
     }
   }
 }
+
+

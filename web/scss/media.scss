@@ -82,6 +82,17 @@
 }
 
 @media (max-width: 550px) {
+  .modal-content {
+    margin: 0 auto;
+    width: 330px;
+  }
+
+  .about-us-video {
+    height: 11pc;
+    margin-bottom: 44px;
+    width: 18pc;
+  }
+
   .FAQ {
     height: 190px;
   }
@@ -144,14 +155,22 @@
 }
 
 @media (max-width: 320px) {
+  .modal-content {
+    margin: 0 auto;
+    width: 310px;
+  }
+
   .about-us-video {
     height: 11pc;
     margin-bottom: 44px;
     width: 18pc;
   }
 
-  .FAQ {
-    height: 300px;
+  .FAQ-wrapper{
+    margin-top: 75px;
+    .FAQ {
+      height: 300px;
+    }
   }
 
   .contacts {

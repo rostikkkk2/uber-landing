@@ -13,7 +13,7 @@ class Partner extends \yii\db\ActiveRecord {
     public function rules() {
         return [
             [['name', 'phone_number', 'email', 'city'], 'required'],
-            ['phone_number', 'match', 'pattern' => '/^(8)(\d{3})(\d{3})(\d{2})(\d{2})/', 'message' => 'Телефона, должно быть в формате "80931234567"'],
+            ['phone_number', 'match', 'pattern' => '/^(0)(\d{2})(\d{3})(\d{2})(\d{2})/', 'message' => 'Телефона, должно быть в формате "0931234567"'],
             ['email', 'email'],
             [['name', 'email', 'city'], 'string', 'max' => 50],
         ];

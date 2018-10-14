@@ -1,4 +1,4 @@
-<div class="row about-us">
+<div class="row about-us mt-75">
   <div class="col-md-12 ">
     <div class="row">
       <a name="about_us"></a>

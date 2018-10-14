@@ -9,20 +9,11 @@ $this -> registerCssFile('@web/css/style.css', ['depends' => 'app\assets\AppAsse
     <tr>
       <th>Имя</th>
       <th>Телефон</th>
-      <th>Модель машины</th>
-      <th>Год выпуска</th>
+      <th>Email</th>
       <th>Дата</th>
     </tr>
   </thead>
   <tbody>
-      <?php
-      $drop_all = ActiveForm::begin([
-        'action' => ['list/delete-partner-all'],
-        'method' => 'post',
-      ]);
-      ?>
-      <?=HTML::submitButton('Delete-All', ['class' => 'btn btn-success']); ?>
-      <?php $drop_all = ActiveForm::end(); ?>
       <?php foreach ($lists as $list): ?>
         <tr>
           <td><?= $list -> name ?></td>

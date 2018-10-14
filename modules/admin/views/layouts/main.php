@@ -6,8 +6,12 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-
 AppAsset::register($this);
+$this->registerLinkTag([
+  'rel' => 'icon',
+  'type' => 'image/png',
+  'href' => '/web/favicon.ico'
+]);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -25,7 +29,7 @@ AppAsset::register($this);
     <div class="wrap">
       <?php
       NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => '<img id="logo" class="logo-admin" src="/images/logo.png" alt="logo">' . '<b>Админка</b>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
           'class' => 'navbar-inverse navbar-fixed-top',
@@ -40,13 +44,13 @@ AppAsset::register($this);
             '<li>'
             . Html::beginForm(['/admin/list'], 'post')
             . Html::submitButton(
-                'Новые работники', ['class' => 'btn btn-link']
+                'Новые работники', ['class' => 'mt-5 btn btn-link']
             )
             . Html::endForm()
             . '<li>'
             . Html::beginForm(['/admin/list/partner'])
             . Html::submitButton(
-                'Работники на смену партнера', ['class' => 'btn btn-link']
+                'Работники на смену партнера', ['class' => 'mt-5 btn btn-link']
             )
             . Html::endForm()
             . '</li>'
@@ -54,7 +58,7 @@ AppAsset::register($this);
             . Html::beginForm(['/admin/default/logout'], 'post')
             . Html::submitButton(
                 'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
+                ['class' => 'mt-5 btn btn-link logout']
             )
             . Html::endForm()
             . '</li>'

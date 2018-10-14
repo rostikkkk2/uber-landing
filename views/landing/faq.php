@@ -1,6 +1,6 @@
 <div class="row">
   <a name="faq"></a>
-  <div class="col-md-12 mt-25 mb-50 FAQ-wrapper">
+  <div class="col-md-12 mt-75 mb-50 FAQ-wrapper">
     <h2 class="text-center mb-25 headline font-to-titles">Популярные вопросы</h2>
     <div class="row">
       <div class="col-md-4">

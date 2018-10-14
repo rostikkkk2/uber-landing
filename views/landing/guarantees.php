@@ -1,6 +1,6 @@
 <div class="row">
   <a name="guarantees"></a>
-  <div class="col-md-12 wrapper-guarantees font-to-text">
+  <div class="col-md-12 mt-50 wrapper-guarantees font-to-text">
     <h2 class="text-center mb-25 headline font-to-titles">Преимущества</h2>
     <div class="row">
       <div class="col-md-12">
