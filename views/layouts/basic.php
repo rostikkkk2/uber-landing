@@ -7,6 +7,11 @@
   use yii\bootstrap\Nav;
   use yii\bootstrap\NavBar;
   AppAsset::register($this);
+  $this->registerLinkTag([
+    'rel' => 'icon',
+    'type' => 'image/png',
+    'href' => '/web/favicon.ico'
+  ]);
 ?>
 <?php $this -> beginPage(); ?>
 <!DOCTYPE html>
