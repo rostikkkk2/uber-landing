@@ -83,8 +83,7 @@
 
 @media (max-width: 550px) {
   .modal-content {
-    margin: 0 auto;
-    width: 330px;
+    width: 375px;
   }
 
   .about-us-video {
@@ -128,6 +127,11 @@
     height: 300px;
   }
 
+  .modal-content {
+    width: 360px;
+    margin: 0;
+  }
+
   .contacts {
     .contact-info {
       word-break: break-all;
@@ -156,8 +160,8 @@
 
 @media (max-width: 320px) {
   .modal-content {
-    margin: 0 auto;
-    width: 310px;
+    width: 320px;
+    margin: 0;
   }
 
   .about-us-video {
