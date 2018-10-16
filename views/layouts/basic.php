@@ -20,7 +20,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>uber-landing</title>
+    <title>Uber Ukraine Cab</title>
     <?php $this -> head(); ?>
   </head>
   <body>
@@ -45,19 +45,20 @@
       <nav>
         <div class="container">
           <div class="row text-center">
-            <div class="col-lg-2 col-md-1 logo hidden-sm hidden-xs">
-              <img id="logo" src="/images/logo.png" alt="logo">
+            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+              <img id="logo" class="logo" src="/images/logo.png" alt="logo">
             </div>
-            <div class="col-lg-7 col-md-8 hidden-xs hidden-sm">
+            <div class="col-lg-8 col-md-7 hidden-xs hidden-sm">
               <ul class="mt-25 nav-menu-titles font-to-titles">
                 <li><a href="#guarantees">Преимущества</a></li>
                 <li><a href="#about_us">О нас</a></li>
                 <li><a href="#requirements">Требования</a></li>
                 <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#profitable_terms">Выгода системы убер</a></li>
                 <li><a href="#faq">Вопросы</a></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+            <div class="col-lg-2 col-md-3 hidden-xs hidden-sm">
               <div class="mt-15 fs-19">
                 <i class="glyphicon glyphicon-earphone"></i>
                 <a href="tel:+380994790063">+380994790063</a>
@@ -85,6 +86,7 @@
                     '<li><a href="#about_us">О нас</a></li>',
                     '<li><a href="#requirements">Требования</a></li>',
                     '<li><a href="#contacts">Контакты</a></li>',
+                    '<li class="hidden-sm"><a href="#profitable_terms">Выгода системы убер</a></li>',
                     '<li><a href="#faq">Вопросы</a></li>',
                     '<li class="hidden-sm">
                       <a href="tel:+380994790063">
@@ -149,19 +151,20 @@
     <footer class="mt-25">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-lg-1 col-md-2">
               <img id="logo" src="/images/logo.png" alt="logo">
           </div>
-          <div class="col-md-7">
+          <div class="col-lg-9 col-md-7">
             <ul class="mt-25 font-to-titles">
               <li><a href="#guarantees">Преимущества</a></li>
               <li><a href="#about_us">О нас</a></li>
               <li><a href="#requirements">Требования</a></li>
               <li><a href="#contacts">Контакты</a></li>
+              <li><a href="#benefit">Выгода системы убер</a></li>
               <li><a href="#faq">Вопросы</a></li>
             </ul>
           </div>
-          <div class="col-md-3 number-footer">
+          <div class="col-lg-2 col-md-3 number-footer">
             <div class="mt-10 fs-22 font-to-titles">
                 <i class="glyphicon glyphicon-earphone"></i>
                 <a href="tel:+380994790063">+380994790063</a>

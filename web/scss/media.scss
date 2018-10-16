@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 991px) {
+  .benefit-wrapper {
+    text-align: center; 
+  }
+
   .FAQ {
     height: 150px;
   }
@@ -128,8 +132,8 @@
   }
 
   .modal-content {
-    width: 360px;
     margin: 0;
+    width: 360px;
   }
 
   .contacts {
@@ -160,8 +164,8 @@
 
 @media (max-width: 320px) {
   .modal-content {
-    width: 320px;
     margin: 0;
+    width: 320px;
   }
 
   .about-us-video {

@@ -16,6 +16,9 @@
         <?= $this->render('requirement.php'); ?>
       </div>
         <?= $this->render('contacts.php') ?>
+      <div class="container-fluid padding-0">
+        <?= $this->render('benefit.php'); ?>
+      </div>
       <div class="container">
         <?= $this->render('faq.php'); ?>
       </div>
