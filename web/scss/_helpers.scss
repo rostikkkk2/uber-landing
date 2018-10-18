@@ -22,10 +22,6 @@
   font-family: 'Intro';
 }
 
-.ff-p {
-  font-family: Pompadur;
-}
-
 .d-inline-block {
   display: inline-block;
 }
@@ -40,6 +36,10 @@
 
 .fw-b {
   font-weight: bold;
+}
+
+.margin-0-auto {
+  margin: 0 auto;
 }
 
 label {
@@ -78,4 +78,11 @@ label {
   font-style: normal;
   font-weight: normal;
   src: url('fonts/GenR102.ttf')format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Helvetica.otf')format('truetype');
 }
