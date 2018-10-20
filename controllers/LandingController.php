@@ -36,6 +36,10 @@ class LandingController extends Controller {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=286979119&text={$message_new_worker}");
         curl_exec($curl);
+        curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=386472158&text={$message_new_worker}");
+        curl_exec($curl);
+        curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=154999383&text={$message_new_worker}");
+        curl_exec($curl);
         Yii::$app -> session -> setFlash('success', 'Ваш запрос отправлен');
       }else {
         Yii::$app -> session -> setFlash('error', 'Ваш запрос не отправлен');
@@ -60,6 +64,10 @@ class LandingController extends Controller {
       if($model -> save()){
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=286979119&text={$message_new_partner}");
+        curl_exec($curl);
+        curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=386472158&text={$message_new_partner}");
+        curl_exec($curl);
+        curl_setopt($curl, CURLOPT_URL, self::API_URL . "sendMessage?chat_id=154999383&text={$message_new_partner}");
         curl_exec($curl);
         Yii::$app -> session -> setFlash('success', 'Ваш запрос отправлен');
       }else {

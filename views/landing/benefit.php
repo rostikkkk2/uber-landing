@@ -1,15 +1,15 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <img class="img-komissiya" src="/images/komissiya.jpg" alt="">
-    </div>
-  </div>
-  <div class="row mt-75 benefit-wrapper">
+  <div class="row benefit-wrapper">
     <div class="col-md-12">
       <div class="row">
         <a name="benefit"></a>
         <div class="col-md-12">
           <h2 class="text-center mb-50 mt-50 headline font-to-titles">Выгода системы убер</h2>
+        </div>
+      </div>
+      <div class="row mb-50">
+        <div class="col-md-12 text-center">
+          <img class="img-komissiya" src="/images/komissiya.jpg" alt="">
         </div>
       </div>
       <div class="row">
