@@ -50,6 +50,7 @@ $config = [
       'enablePrettyUrl' => true,
       'showScriptName' => false,
       'rules' => [
+        'sitemap.xml' => 'sitemap/index',
         '' => '/landing/index',
         '<controller>/benefit' => '/landing/benefit',
         'POST admin/<controller>/delete-worker/<id:\d+>' => '/admin/list/delete-worker',
