@@ -17,7 +17,11 @@ $this -> registerCssFile('@web/css/style.css', ['depends' => 'app\assets\AppAsse
       <?php foreach ($lists as $list): ?>
         <tr>
           <td><?= $list -> name ?></td>
-          <td><?= $list -> phone_number ?></td>
+          <td>
+            <a href="tel:0<?= $list -> phone_number?>">
+              <?="0" . $list -> phone_number ?>
+            </a>
+          </td>
           <td><?= $list -> email ?></td>
           <td><?= $list -> datetime ?></td>
           <td>

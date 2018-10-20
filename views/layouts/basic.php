@@ -21,6 +21,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="IICgeNI6eTMRaObg0uJajcrpSIauVvFUz4oUBtx2Bg8" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127818267-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-127818267-1');
+    </script>
     <title>Uber Ukraine Cab</title>
     <?php $this -> head(); ?>
   </head>
