@@ -1,16 +1,28 @@
 @import 'variables';
 
 @media (max-width: 2559px) {
+  .img-komissiya {
+    width: 75%;
+  }
+
   .FAQ {
     height: 225px;
   }
 }
 @media (max-width: 1400px) {
+  .img-komissiya {
+    width: 75%;
+  }
+
   .FAQ {
     height: 225px;
   }
 }
 @media (max-width: 1199px) {
+  .img-komissiya {
+    width: 100%;
+  }
+
   .FAQ {
     height: 300px;
   }
@@ -32,6 +44,10 @@
 }
 
 @media (max-width: 1024px) {
+  .img-komissiya {
+    width: 100%;
+  } 
+
   .FAQ {
     height: 300px;
   }
@@ -53,6 +69,12 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-nav {
+    li {
+      margin-left: 10px;
+    }
+  }
+
   .benefit-wrapper {
     text-align: center; 
   }

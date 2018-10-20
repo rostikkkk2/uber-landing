@@ -24,8 +24,8 @@
     <?php $this -> head(); ?>
   </head>
   <body>
+    <?php $this -> beginBody(); ?>
     <header class="basic-header c-white">
-      <?php $this -> beginBody(); ?>
       <?php if (Yii::$app -> session -> hasFlash('success')) :?>
         <div class="alert alert-success alert-dismissible" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -45,17 +45,19 @@
       <nav>
         <div class="container">
           <div class="row text-center">
-            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
-              <img id="logo" class="logo" src="/images/logo.png" alt="logo">
-            </div>
+            <a href="/landing">
+              <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                <img id="logo" class="logo" src="/images/logo.png" alt="logo">
+              </div>
+            </a>
             <div class="col-lg-8 col-md-7 hidden-xs hidden-sm">
               <ul class="mt-25 nav-menu-titles font-to-titles">
-                <li><a href="#guarantees">Преимущества</a></li>
-                <li><a href="#about_us">О нас</a></li>
-                <li><a href="#requirements">Требования</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <li><a href="#profitable_terms">Выгода системы убер</a></li>
-                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="/landing/#guarantees">Преимущества</a></li>
+                <li><a href="/landing/#about_us">О нас</a></li>
+                <li><a href="/landing/#requirements">Требования</a></li>
+                <li><a href="/landing/#contacts">Контакты</a></li>
+                <li><a href="/landing/benefit">Выгода системы убер</a></li>
+                <li><a href="/landing/#faq">Вопросы</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-3 hidden-xs hidden-sm">
@@ -82,12 +84,12 @@
                 echo Nav::widget([
                   'options' => ['class' => 'navbar-nav'],
                   'items' => [
-                    '<li><a href="#guarantees">Преимущества</a></li>',
-                    '<li><a href="#about_us">О нас</a></li>',
-                    '<li><a href="#requirements">Требования</a></li>',
-                    '<li><a href="#contacts">Контакты</a></li>',
-                    '<li class="hidden-sm"><a href="#profitable_terms">Выгода системы убер</a></li>',
-                    '<li><a href="#faq">Вопросы</a></li>',
+                    '<li><a href="/landing/index/#guarantees">Преимущества</a></li>',
+                    '<li><a href="/landing/index/#about_us">О нас</a></li>',
+                    '<li class="hidden-sm"><a href="/landing/index/#requirements">Требования</a></li>',
+                    '<li><a href="/landing/index/#contacts">Контакты</a></li>',
+                    '<li><a href="/landing/benefit">Выгода системы убер</a></li>',
+                    '<li><a href="/landing/index/#faq">Вопросы</a></li>',
                     '<li class="hidden-sm">
                       <a href="tel:+380994790063">
                         <i class="glyphicon glyphicon-earphone"></i>
@@ -148,20 +150,22 @@
         <?= $content ?>
       </div>
     </main>
-    <footer class="mt-25">
+    <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-1 col-md-2">
-              <img id="logo" src="/images/logo.png" alt="logo">
-          </div>
+          <a href="/landing">
+            <div class="col-lg-1 col-md-2">
+                <img id="logo" src="/images/logo.png" alt="logo">
+            </div>
+          </a>
           <div class="col-lg-9 col-md-7">
             <ul class="mt-25 font-to-titles">
-              <li><a href="#guarantees">Преимущества</a></li>
-              <li><a href="#about_us">О нас</a></li>
-              <li><a href="#requirements">Требования</a></li>
-              <li><a href="#contacts">Контакты</a></li>
-              <li><a href="#benefit">Выгода системы убер</a></li>
-              <li><a href="#faq">Вопросы</a></li>
+              <li><a href="/landing/#guarantees">Преимущества</a></li>
+              <li><a href="/landing/#about_us">О нас</a></li>
+              <li><a href="/landing/#requirements">Требования</a></li>
+              <li><a href="/landing/#contacts">Контакты</a></li>
+              <li><a href="/landing/benefit">Выгода системы убер</a></li>
+              <li><a href="/landing/#faq">Вопросы</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-3 number-footer">
@@ -177,10 +181,10 @@
         <div class="row">
           <div class="col-md-12 app-links mb-30 mt-20">
             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ubercab.driver&hl=ru">
-              <img src="images/play.png" alt="">
+              <img src="/images/play.png" alt="">
             </a>
             <a class="ml-25" target="_blank" href="https://itunes.apple.com/ru/app/uber-driver-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9/id1131342792?mt=8">
-              <img src="images/appstore.png" alt="">
+              <img src="/images/appstore.png" alt="">
             </a>
           </div>
         </div>

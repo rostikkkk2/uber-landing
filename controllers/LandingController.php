@@ -14,6 +14,10 @@ class LandingController extends Controller {
     return $this -> render('landing');
   }
 
+  public function actionBenefit() {
+    return $this -> render('benefit');
+  }
+
   public function actionNewworker() {
     $request = Yii::$app -> request;
     if ($request -> isPost) {
